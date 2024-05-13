@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media (max-width: 900px) {/*================================ChANGE THIS BEFORE SUBMITTING*/
+  body {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+  
+  }
+
+  .article-group {
+      align-items: center;
+      min-width: 100%;
+  }
+
+  .article {
+      min-width: 100%;
+  }
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  /* Colors */
+  background-color: rgb(31, 31, 31);
+
+  /* Flex display properties */
+  display: flex;
+  justify-content: space-between;
+
+  /* Spacing */
+  padding: 50px;
+
+  /* Font */
+  font-family: Arial, sans-serif;
+}
+
+.filter {
+  /* Colors */
+  background-color: antiquewhite;
+
+  /* Spacing */
+  padding: 15px;
+  padding-right:100px;
+  height: fit-content;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+#filter-title {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.article-group {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 15px;
+  width: 60%;
+}
+
+.article {
+  /* Coloring */
+  background-color: rgb(200, 199, 199);
+
+  /* Spacing */
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius:10px;
+}
+
+.article-heading {
+  display: flex;
+  justify-content: space-between;
+
+}
+.article-title {
+  color: black;
+  font-weight: bold;
+}
+
+.article-date {
+  color: grey;
+}
+
+.article-content {
+  display: flex;
+  padding-top: 15px;
+
+}
+
+.article-content img {
+  width: 80px;
+  height: 90px;
+  margin-right: 10px;
+  border-radius: 10%;
+}
+
+.article-content p {
+  color: black;
 }
