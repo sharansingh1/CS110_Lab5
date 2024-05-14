@@ -1,7 +1,6 @@
-// src/Article.js
 import React from 'react';
 
-const Article = ({ article }) => {
+const Article = ({ article, index }) => {
   const hasImage = article.media.length > 0 && article.media[0].type === "image";
   const articleImage = hasImage ? article.media[0]["media-metadata"][2].url : '';
   const articleTitle = article.title;
@@ -11,7 +10,7 @@ const Article = ({ article }) => {
   return (
     <div className="article">
       <div className="article-heading">
-        <span className="article-title">{articleTitle}</span>
+        <span className="article-title">{index}.) {articleTitle}</span>
         <span className="article-date">{articleDate}</span>
       </div>
       <div className="article-content">

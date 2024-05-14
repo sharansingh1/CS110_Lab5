@@ -4,85 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New York Times Articles</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="filter">
-        <div id="filter-title">
-            Filter
-        </div>
-        <br>
-        <div id="sort-by">
-            <strong>Sort By:</strong>
-            <form>
-                <input type="radio"  name="sort" value="1" checked onchange="setSort(0)">
-                <label for="sort">Most Viewed</label><br>
-                <input type="radio"  name="sort" value="2" onchange="setSort(1)">
-                <label for="sort">Most Shared</label><br>
-                <input type="radio"  name="sort" value="3" onchange="setSort(2)">
-                <label for="sort">Most Emailed</label><br><br>
-                <strong>Time Frame:</strong> <br>
-                <input type="radio"  name="time" value="1" checked onchange="setTime(1)">
-                <label for="time">Day</label><br>
-                <input type="radio"  name="time" value="7" onchange="setTime(7)">
-                <label for="time">Week</label><br>
-                <input type="radio"  name="time" value="30" onchange="setTime(30)">
-                <label for="time">Month</label><br>
-              </form>
-        </div>
-    </div>
-    <div class="article-group">
-        <div class="article">
-            <div class="article-heading">
-                <span class="article-title">Smaple title</span>
-                <span class="article-date">date</span>
-            </div>
-            <div class="article-content">
-                <img class="article-image" src="">
-                <p class="article-abstract"></p>
-            </div>
-        </div>
-        <div class="article">
-            <div class="article-heading">
-                <span class="article-title">Smaple title</span>
-                <span class="article-date">date</span>
-            </div>
-            <div class="article-content">
-                <img class="article-image" src="">
-                <p class="article-abstract"></p>
-            </div>
-        </div>
-        <div class="article">
-            <div class="article-heading">
-                <span class="article-title">Smaple title</span>
-                <span class="article-date">date</span>
-            </div>
-            <div class="article-content">
-                <img class="article-image" src="">
-                <p class="article-abstract"></p>
-            </div>
-        </div>
-        <div class="article">
-            <div class="article-heading">
-                <span class="article-title">Smaple title</span>
-                <span class="article-date">date</span>
-            </div>
-            <div class="article-content">
-                <img class="article-image" src="">
-                <p class="article-abstract"></p>
-            </div>
-        </div>
-        <div class="article">
-            <div class="article-heading">
-                <span class="article-title">Smaple title</span>
-                <span class="article-date">date</span>
-            </div>
-            <div class="article-content">
-                <img class="article-image" src="">
-                <p class="article-abstract"></p>
-            </div>
-        </div>
-    </div>
-    <script src="main.js"></script>
+    <div id="root"></div>
 </body>
 </html>
