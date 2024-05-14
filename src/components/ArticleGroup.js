@@ -20,10 +20,22 @@ const ArticleGroup = ({sortTitleChange, timeTitleChange}) => {
 
   useEffect(() => {
     const getArticles = async () => {
-      const url = `${apiURLs[sortNum]}${timePeriod}.json?api-key=${apiKey}`;
-      const data = await fetch(url);
-      const response = await data.json();
-      setArticles(response.results.slice(0, maxArticles));
+      try{
+        const url = `${apiURLs[sortNum]}${timePeriod}.json?api-key=${apiKey}`;
+        const data = await fetch(url);
+        const response = await data.json();
+        if(response.results) {
+            setArticles(response.results.slice(0, maxArticles))
+        } 
+        else {
+            setArticles([]); 
+            console.error('Undefined response', response);
+        }
+       
+      } catch (error){
+        console.error('Error getting the articles: ', error)
+        setArticles([]);
+      }
     };
 
     getArticles();
